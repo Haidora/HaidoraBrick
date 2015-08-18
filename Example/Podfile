@@ -1,0 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'HaidoraBrick_Example', :exclusive => true do
+  pod "HaidoraBrick", :path => "../"
+end

@@ -1,0 +1,18 @@
+PODS:
+  - HaidoraBrick (0.0.1):
+    - HaidoraBrick/Extension (= 0.0.1)
+  - HaidoraBrick/Extension (0.0.1):
+    - HaidoraBrick/Extension/Navigation (= 0.0.1)
+  - HaidoraBrick/Extension/Navigation (0.0.1)
+
+DEPENDENCIES:
+  - HaidoraBrick (from `../`)
+
+EXTERNAL SOURCES:
+  HaidoraBrick:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HaidoraBrick: 8155dd2c7dd03ca0ad773ec5bb0e37d31822f720
+
+COCOAPODS: 0.37.2
