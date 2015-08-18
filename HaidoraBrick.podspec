@@ -13,8 +13,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/*.h','Pod/Classes/Core/**/*{h,m}'
+  s.subspec 'Core' do |core|
+      core.source_files = 'Pod/Classes/*.h','Pod/Classes/Core/**/*{h,m}'
+  end
   s.subspec 'Extension' do |extension|
+      extension.dependency 'HaidoraBrick/Core'
       extension.source_files = 'Pod/Classes/Extension/*.h'
       extension.subspec 'Navigation' do |extension_Navigation|
           extension_Navigation.source_files = 'Pod/Classes/Extension/Navigation/**/*{h,m}'
